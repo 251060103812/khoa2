@@ -1,0 +1,117 @@
+<a href="#main-content" class="skip-link">Chuyển đến Nội dung chính</a>
+<nav class="navbar">
+    <a href="index.html">Trang chủ</a>
+    <a href="gallery.html">Thư viện ảnh</a>
+    <a href="contact.html">Liên hệ</a>
+</nav>
+<main id="main-content" class="grid-container">
+    <section>
+        <h2>Giới thiệu</h2>
+        <p>Nội dung giới thiệu về trang web...</p>
+        <img src="image1.jpg" alt="Ảnh 1">
+    </section>
+    <section>
+        <h2>Tin tức nổi bật</h2>
+        <p>Các cập nhật mới nhất...</p>
+        <img src="image2.jpg" alt="Ảnh 2">
+    </section>
+</main>
+<div class="flex-gallery">
+    <img src="img1.jpg" alt="Ảnh 1">
+    <img src="img2.jpg" alt="Ảnh 2">
+    <img src="img3.jpg" alt="Ảnh 3">
+    <img src="img4.jpg" alt="Ảnh 4">
+    <img src="img5.jpg" alt="Ảnh 5">
+</div>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Bài Tập Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /* Yêu cầu 3: Skip Link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+        /* Yêu cầu 4 & 7: Điều hướng Flex */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background-color: #2c3e50;
+            padding: 15px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            color: #3498db;
+        }
+        /* Yêu cầu 6: Grid ít nhất 2 cột */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+        /* Yêu cầu 5 & 8: Box model và Hover */
+        img {
+            border: 3px solid #3498db;
+            padding: 5px;
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Yêu cầu 3 -->
+    <a href="#main-content" class="skip-link">Chuyển đến Nội dung chính</a>
+
+    <!-- Yêu cầu 4, 7 -->
+    <nav class="navbar">
+        <a href="index.html">Trang chủ</a>
+        <a href="gallery.html">Thư viện ảnh (5+ ảnh)</a>
+        <a href="contact.html">Liên hệ</a>
+    </nav>
+
+    <!-- Yêu cầu 6 -->
+    <main id="main-content" class="grid-container">
+        <section>
+            <h2>Phần nội dung 1</h2>
+            <p>Mô tả ngắn gọn về phần nội dung đầu tiên trên trang web.</p>
+            <img src="path_to_your_image_1.jpg" alt="Hình ảnh minh họa 1">
+        </section>
+        <section>
+            <h2>Phần nội dung 2</h2>
+            <p>Mô tả ngắn gọn về phần nội dung thứ hai trên trang web.</p>
+            <img src="path_to_your_image_2.jpg" alt="Hình ảnh minh họa 2">
+        </section>
+    </main>
+
+</body>
+</html>
